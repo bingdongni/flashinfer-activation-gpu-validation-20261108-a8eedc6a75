@@ -1,2 +1,5 @@
-# flashinfer-activation-gpu-validation-20261108-a8eedc6a75
-One-time CUDA validation of a FlashInfer Triton activation fix
+# FlashInfer Triton activation validation
+
+The [GitHub Actions run](https://github.com/bingdongni/flashinfer-activation-gpu-validation-20261108-a8eedc6a75/actions/runs/42471689332) compares FlashInfer commit `6608c619a617cfad7ae4bf079e6f6d4a63f0c2c9` with upstream baseline `11bf37df449b8b478e858e7a8ba432976b28457e`. The baseline passed 12 cases and failed 24 sliced or broadcast input cases; the patched code passed all 36. The [job log](gpu-validation.log) records the checks and GPU details. Repository hooks also passed on the changed files in the same run.
+
+The one-job Windows runner used an NVIDIA GeForce RTX 4060 Laptop GPU and the actual FlashInfer Triton activation kernel. A minimal import adapter loads the pinned wrapper, kernel and quantization helper without unrelated package initialization. The test compares output with PyTorch across FP16 and BF16 inputs, row and column strides, scales and tail sizes. The pinned source remains subject to the accompanying FlashInfer license and notice.
