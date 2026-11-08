@@ -1,0 +1,302 @@
+2026-11-08T10:30:39.8060821Z Current runner version: '2.338.2'
+2026-11-08T10:30:39.8067862Z Runner name: 'ephemeral-flashinfer-gpu'
+2026-11-08T10:30:39.8068563Z Runner group name: 'Default'
+2026-11-08T10:30:39.8069456Z Machine name: '***'
+2026-11-08T10:30:39.8072565Z ##[group]GITHUB_TOKEN Permissions
+2026-11-08T10:30:39.8074568Z Contents: read
+2026-11-08T10:30:39.8075077Z Metadata: read
+2026-11-08T10:30:39.8075553Z ##[endgroup]
+2026-11-08T10:30:39.8077400Z Secret source: Actions
+2026-11-08T10:30:39.8078166Z Cache mode: write
+2026-11-08T10:30:39.8078786Z Prepare workflow directory
+2026-11-08T10:30:39.8636922Z Prepare all required actions
+2026-11-08T10:30:39.8684592Z Getting action download info
+2026-11-08T10:30:42.4826518Z Download action repository 'actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683' (SHA:11bd71901bbe5b1630ceea73d27597364c9af683)
+2026-11-08T10:30:46.4593851Z Complete job name: test
+2026-11-08T10:30:46.7535455Z ##[group]Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+2026-11-08T10:30:46.7537597Z with:
+2026-11-08T10:30:46.7538258Z   persist-credentials: false
+2026-11-08T10:30:46.7540897Z   repository: bingdongni/flashinfer-activation-gpu-validation-20261108-a8eedc6a75
+2026-11-08T10:30:46.7548674Z   token: ***
+2026-11-08T10:30:46.7549301Z   ssh-strict: true
+2026-11-08T10:30:46.7549908Z   ssh-user: git
+2026-11-08T10:30:46.7550505Z   clean: true
+2026-11-08T10:30:46.7551138Z   sparse-checkout-cone-mode: true
+2026-11-08T10:30:46.7551874Z   fetch-depth: 1
+2026-11-08T10:30:46.7552468Z   fetch-tags: false
+2026-11-08T10:30:46.7553109Z   show-progress: true
+2026-11-08T10:30:46.7553735Z   lfs: false
+2026-11-08T10:30:46.7554326Z   submodules: false
+2026-11-08T10:30:46.7554958Z   set-safe-directory: true
+2026-11-08T10:30:46.7556377Z env:
+2026-11-08T10:30:46.7557103Z   MASK_MACHINE: ***
+2026-11-08T10:30:46.7558034Z   MASK_USER: ***
+2026-11-08T10:30:46.7558839Z   PYTEST_DISABLE_PLUGIN_AUTOLOAD: 1
+2026-11-08T10:30:46.7559606Z   GIT_TERMINAL_PROMPT: 0
+2026-11-08T10:30:46.7560531Z   CC: C:\PR\flashinfer-triton-windows-20261108\triton\runtime\tcc\tcc.exe
+2026-11-08T10:30:46.7561878Z   CUDA_PATH: C:\PR\flashinfer-triton-windows-20261108\triton\backends\nvidia
+2026-11-08T10:30:46.7562909Z ##[endgroup]
+2026-11-08T10:30:47.2866162Z Syncing repository: bingdongni/flashinfer-activation-gpu-validation-20261108-a8eedc6a75
+2026-11-08T10:30:47.2868667Z ##[group]Getting Git version info
+2026-11-08T10:30:47.2870247Z Working directory is 'C:\PR\github-gpu-runner-20261106\_work\flashinfer-activation-gpu-validation-20261108-a8eedc6a75\flashinfer-activation-gpu-validation-20261108-a8eedc6a75'
+2026-11-08T10:30:47.2872743Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe version
+2026-11-08T10:30:47.3211213Z git version 2.56.0.windows.4
+2026-11-08T10:30:47.3250417Z ##[endgroup]
+2026-11-08T10:30:47.3261710Z Copying 'C:\Users\***\.gitconfig' to 'C:\PR\github-gpu-runner-20261106\_work\_temp\b8ac4204-14a0-450d-bd49-a78fcd7dcbca\.gitconfig'
+2026-11-08T10:30:47.3281882Z Temporarily overriding HOME='C:\PR\github-gpu-runner-20261106\_work\_temp\b8ac4204-14a0-450d-bd49-a78fcd7dcbca' before making global git config changes
+2026-11-08T10:30:47.3285480Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-08T10:30:47.3290518Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe config --global --add safe.directory C:\PR\github-gpu-runner-20261106\_work\flashinfer-activation-gpu-validation-20261108-a8eedc6a75\flashinfer-activation-gpu-validation-20261108-a8eedc6a75
+2026-11-08T10:30:47.3898862Z Deleting the contents of 'C:\PR\github-gpu-runner-20261106\_work\flashinfer-activation-gpu-validation-20261108-a8eedc6a75\flashinfer-activation-gpu-validation-20261108-a8eedc6a75'
+2026-11-08T10:30:47.3905927Z ##[group]Initializing the repository
+2026-11-08T10:30:47.3910425Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe init C:\PR\github-gpu-runner-20261106\_work\flashinfer-activation-gpu-validation-20261108-a8eedc6a75\flashinfer-activation-gpu-validation-20261108-a8eedc6a75
+2026-11-08T10:30:47.4686017Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-08T10:30:47.4687491Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-08T10:30:47.4688095Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-08T10:30:47.4688490Z hint: call:
+2026-11-08T10:30:47.4688709Z hint:
+2026-11-08T10:30:47.4689087Z hint: 	git config --global init.defaultBranch <name>
+2026-11-08T10:30:47.4689436Z hint:
+2026-11-08T10:30:47.4689788Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-08T10:30:47.4690315Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-08T10:30:47.4692207Z hint:
+2026-11-08T10:30:47.4692512Z hint: 	git branch -m <name>
+2026-11-08T10:30:47.4692769Z hint:
+2026-11-08T10:30:47.4693182Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-08T10:30:47.4705417Z Initialized empty Git repository in C:/PR/github-gpu-runner-20261106/_work/flashinfer-activation-gpu-validation-20261108-a8eedc6a75/flashinfer-activation-gpu-validation-20261108-a8eedc6a75/.git/
+2026-11-08T10:30:47.4755924Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe remote add origin https://github.com/bingdongni/flashinfer-activation-gpu-validation-20261108-a8eedc6a75
+2026-11-08T10:30:47.5386841Z ##[endgroup]
+2026-11-08T10:30:47.5388249Z ##[group]Disabling automatic garbage collection
+2026-11-08T10:30:47.5390576Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe config --local gc.auto 0
+2026-11-08T10:30:47.5983632Z ##[endgroup]
+2026-11-08T10:30:47.5984505Z ##[group]Setting up auth
+2026-11-08T10:30:47.5996699Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe config --local --name-only --get-regexp core\.sshCommand
+2026-11-08T10:30:47.6587757Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+2026-11-08T10:30:48.5024918Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-08T10:30:48.5439163Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+2026-11-08T10:30:49.4759125Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe config --local http.https://github.com/.extraheader "AUTHORIZATION: basic ***"
+2026-11-08T10:30:49.5401678Z ##[endgroup]
+2026-11-08T10:30:49.5416500Z ##[group]Fetching the repository
+2026-11-08T10:30:49.5421021Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +5be9b6d03c05a41c34831236378b97eaae68d590:refs/remotes/origin/main
+2026-11-08T10:30:52.2111723Z From https://github.com/bingdongni/flashinfer-activation-gpu-validation-20261108-a8eedc6a75
+2026-11-08T10:30:52.2112453Z  * [new ref]         5be9b6d03c05a41c34831236378b97eaae68d590 -> origin/main
+2026-11-08T10:30:52.2153890Z ##[endgroup]
+2026-11-08T10:30:52.2154342Z ##[group]Determining the checkout info
+2026-11-08T10:30:52.2156885Z ##[endgroup]
+2026-11-08T10:30:52.2166200Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe sparse-checkout disable
+2026-11-08T10:30:52.3079180Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe config --local --unset-all extensions.worktreeConfig
+2026-11-08T10:30:52.3868676Z ##[group]Checking out the ref
+2026-11-08T10:30:52.3871512Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe checkout --progress --force -B main refs/remotes/origin/main
+2026-11-08T10:30:52.6508741Z Switched to a new branch 'main'
+2026-11-08T10:30:52.6663534Z branch 'main' set up to track 'origin/main'.
+2026-11-08T10:30:52.6710482Z ##[endgroup]
+2026-11-08T10:30:52.7325153Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe log -1 --format=%H
+2026-11-08T10:30:52.7762083Z 5be9b6d03c05a41c34831236378b97eaae68d590
+2026-11-08T10:30:52.7826903Z ##[group]Removing auth
+2026-11-08T10:30:52.7845381Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe config --local --name-only --get-regexp core\.sshCommand
+2026-11-08T10:30:52.8305320Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+2026-11-08T10:30:53.7168135Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-08T10:30:53.7742778Z http.https://github.com/.extraheader
+2026-11-08T10:30:53.7786203Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe config --local --unset-all http.https://github.com/.extraheader
+2026-11-08T10:30:53.8417390Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+2026-11-08T10:30:54.7200837Z ##[endgroup]
+2026-11-08T10:30:54.8111855Z ##[group]Run & 'C:\PR\kvpress-gpu-venv-20261107\Scripts\python.exe' -c "import hashlib,pathlib; pairs=[('flashinfer/triton/activation.py','45006dd1805fc2a541fa7721b632131e1b5ce7d3b267bbe4b997d137fc33b0c7'),('flashinfer/triton/kernels/activation.py','2d90c139c68d6f6a482459cdd6c20b4d4e283bc44e8f5ff2e24152a8216a9efc'),('flashinfer/triton/kernels/quant.py','6b45d22b3e87b7a501d6493d310d629d3b8b41e1c459d0844794ac0c96b94c05'),('tests/utils/test_triton_activation.py','4bb401fda925d2c933120c3e258d3d5f6b24c01f601c5cb3a25797c7dbf5dc8b'),('baseline_activation.py','4d601d95b6eda38fa0b43b549dcae3d18f1925947e3ce88fd93a95b4b267313c'),('baseline_kernel.py','05c3d886cf261d0483f8616bbed22e968e2c6ba1f84b2c083b9e7d1f8410d868'),('flashinfer_activation_test_adapter_20261108.py','1550d0b7a8dc68e74182fd6c433b7f398f3dd6c46d789005fc8a9095f894d5d7')]; assert all(hashlib.sha256(pathlib.Path(p).read_bytes()).hexdigest()==h for p,h in pairs); print('All source hashes verified')"
+2026-11-08T10:30:54.8124284Z & 'C:\PR\kvpress-gpu-venv-20261107\Scripts\python.exe' -c "import hashlib,pathlib; pairs=[('flashinfer/triton/activation.py','45006dd1805fc2a541fa7721b632131e1b5ce7d3b267bbe4b997d137fc33b0c7'),('flashinfer/triton/kernels/activation.py','2d90c139c68d6f6a482459cdd6c20b4d4e283bc44e8f5ff2e24152a8216a9efc'),('flashinfer/triton/kernels/quant.py','6b45d22b3e87b7a501d6493d310d629d3b8b41e1c459d0844794ac0c96b94c05'),('tests/utils/test_triton_activation.py','4bb401fda925d2c933120c3e258d3d5f6b24c01f601c5cb3a25797c7dbf5dc8b'),('baseline_activation.py','4d601d95b6eda38fa0b43b549dcae3d18f1925947e3ce88fd93a95b4b267313c'),('baseline_kernel.py','05c3d886cf261d0483f8616bbed22e968e2c6ba1f84b2c083b9e7d1f8410d868'),('flashinfer_activation_test_adapter_20261108.py','1550d0b7a8dc68e74182fd6c433b7f398f3dd6c46d789005fc8a9095f894d5d7')]; assert all(hashlib.sha256(pathlib.Path(p).read_bytes()).hexdigest()==h for p,h in pairs); print('All source hashes verified')"
+2026-11-08T10:30:54.8130977Z if ($LASTEXITCODE -ne 0) { throw 'Source hash verification failed' }
+2026-11-08T10:30:54.8131968Z Write-Host 'FlashInfer commit: 6608c619a617cfad7ae4bf079e6f6d4a63f0c2c9'
+2026-11-08T10:30:54.8132998Z Write-Host 'Original upstream commit: 11bf37df449b8b478e858e7a8ba432976b28457e'
+2026-11-08T10:30:54.8134019Z nvidia-smi --query-gpu=name,driver_version,memory.total --format=csv,noheader
+2026-11-08T10:30:54.8134915Z if ($LASTEXITCODE -ne 0) { throw 'nvidia-smi failed' }
+2026-11-08T10:30:54.8135802Z $env:PYTHONPATH = "$env:GITHUB_WORKSPACE;C:\PR\flashinfer-triton-windows-20261108"
+2026-11-08T10:30:54.8137724Z & 'C:\PR\kvpress-gpu-venv-20261107\Scripts\python.exe' -c "import torch,triton; assert torch.cuda.is_available(); print('GPU:',torch.cuda.get_device_name(0),'PyTorch:',torch.__version__,'CUDA:',torch.version.cuda,'Triton:',triton.__version__)"
+2026-11-08T10:30:54.8139502Z if ($LASTEXITCODE -ne 0) { throw 'GPU check failed' }
+2026-11-08T10:30:54.8218844Z shell: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.EXE -command ". '{0}'"
+2026-11-08T10:30:54.8219593Z env:
+2026-11-08T10:30:54.8220060Z   MASK_MACHINE: ***
+2026-11-08T10:30:54.8220496Z   MASK_USER: ***
+2026-11-08T10:30:54.8220885Z   PYTEST_DISABLE_PLUGIN_AUTOLOAD: 1
+2026-11-08T10:30:54.8221345Z   GIT_TERMINAL_PROMPT: 0
+2026-11-08T10:30:54.8222110Z   CC: C:\PR\flashinfer-triton-windows-20261108\triton\runtime\tcc\tcc.exe
+2026-11-08T10:30:54.8222989Z   CUDA_PATH: C:\PR\flashinfer-triton-windows-20261108\triton\backends\nvidia
+2026-11-08T10:30:54.8223647Z ##[endgroup]
+2026-11-08T10:30:55.3776958Z All source hashes verified
+2026-11-08T10:30:55.4455807Z FlashInfer commit: 6608c619a617cfad7ae4bf079e6f6d4a63f0c2c9
+2026-11-08T10:30:55.4562988Z Original upstream commit: 11bf37df449b8b478e858e7a8ba432976b28457e
+2026-11-08T10:30:57.1975755Z NVIDIA GeForce RTX 4060 Laptop GPU, 617.42, 8188 MiB
+2026-11-08T10:31:00.9696568Z GPU: NVIDIA GeForce RTX 4060 Laptop GPU PyTorch: 2.6.0+cu124 CUDA: 12.4 Triton: 3.2.0
+2026-11-08T10:31:02.1691529Z ##[group]Run $env:PYTHONPATH = "$env:GITHUB_WORKSPACE;C:\PR\flashinfer-triton-windows-20261108"
+2026-11-08T10:31:02.1692178Z $env:PYTHONPATH = "$env:GITHUB_WORKSPACE;C:\PR\flashinfer-triton-windows-20261108"
+2026-11-08T10:31:02.1692711Z $baseline = Join-Path $env:RUNNER_TEMP ("flashinfer-baseline-" + $env:GITHUB_RUN_ID)
+2026-11-08T10:31:02.1693191Z New-Item -ItemType Directory -Force -Path $baseline | Out-Null
+2026-11-08T10:31:02.1693727Z Copy-Item -LiteralPath (Join-Path $env:GITHUB_WORKSPACE 'flashinfer') -Destination $baseline -Recurse
+2026-11-08T10:31:02.1694428Z Copy-Item -LiteralPath 'baseline_activation.py' -Destination (Join-Path $baseline 'flashinfer/triton/activation.py') -Force
+2026-11-08T10:31:02.1695203Z Copy-Item -LiteralPath 'baseline_kernel.py' -Destination (Join-Path $baseline 'flashinfer/triton/kernels/activation.py') -Force
+2026-11-08T10:31:02.1695761Z $env:FLASHINFER_SOURCE_ROOT = $baseline
+2026-11-08T10:31:02.1696148Z $test = Join-Path $env:GITHUB_WORKSPACE 'tests/utils/test_triton_activation.py'
+2026-11-08T10:31:02.1696937Z $output = & 'C:\PR\kvpress-gpu-venv-20261107\Scripts\python.exe' -m pytest -p flashinfer_activation_test_adapter_20261108 --noconftest -o addopts='' $test -q --tb=no 2>&1 | Out-String
+2026-11-08T10:31:02.1697612Z $testExit = $LASTEXITCODE
+2026-11-08T10:31:02.1697873Z Write-Host $output
+2026-11-08T10:31:02.1698344Z if ($testExit -ne 1 -or $output -notmatch '24 failed, 12 passed') { throw 'Unexpected baseline result' }
+2026-11-08T10:31:02.1698826Z exit 0
+2026-11-08T10:31:02.1729291Z shell: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.EXE -command ". '{0}'"
+2026-11-08T10:31:02.1729846Z env:
+2026-11-08T10:31:02.1730112Z   MASK_MACHINE: ***
+2026-11-08T10:31:02.1730352Z   MASK_USER: ***
+2026-11-08T10:31:02.1730548Z   PYTEST_DISABLE_PLUGIN_AUTOLOAD: 1
+2026-11-08T10:31:02.1730788Z   GIT_TERMINAL_PROMPT: 0
+2026-11-08T10:31:02.1731089Z   CC: C:\PR\flashinfer-triton-windows-20261108\triton\runtime\tcc\tcc.exe
+2026-11-08T10:31:02.1731530Z   CUDA_PATH: C:\PR\flashinfer-triton-windows-20261108\triton\backends\nvidia
+2026-11-08T10:31:02.1731863Z ##[endgroup]
+2026-11-08T10:31:08.6768542Z FFFFFF......FFFFFFFFFFFF......FFFFFF                                     [100%]
+2026-11-08T10:31:08.6770260Z =========================== short test summary info ===========================
+2026-11-08T10:31:08.6780028Z FAILED tests/utils/test_triton_activation.py::test_silu_and_mul_strided_input[False-0-31-dtype0] - AssertionError: Tensor-likes are not close!
+2026-11-08T10:31:08.6781291Z 
+2026-11-08T10:31:08.6781703Z Mismatched elements: 93 / 93 (100.0%)
+2026-11-08T10:31:08.6782897Z Greatest absolute difference: 5.9140625 at index (0, 14) (up to 0.002 allowed)
+2026-11-08T10:31:08.6792575Z Greatest relative difference: 18.015625 at index (1, 9) (up to 0.02 allowed)
+2026-11-08T10:31:08.6795585Z FAILED tests/utils/test_triton_activation.py::test_silu_and_mul_strided_input[False-0-31-dtype1] - AssertionError: Tensor-likes are not close!
+2026-11-08T10:31:08.6796415Z 
+2026-11-08T10:31:08.6796948Z Mismatched elements: 93 / 93 (100.0%)
+2026-11-08T10:31:08.6797937Z Greatest absolute difference: 5.875 at index (0, 14) (up to 0.002 allowed)
+2026-11-08T10:31:08.6798779Z Greatest relative difference: 17.75 at index (1, 9) (up to 0.02 allowed)
+2026-11-08T10:31:08.6800218Z FAILED tests/utils/test_triton_activation.py::test_silu_and_mul_strided_input[False-0-512-dtype0] - AssertionError: Tensor-likes are not close!
+2026-11-08T10:31:08.6804373Z 
+2026-11-08T10:31:08.6804705Z Mismatched elements: 1533 / 1536 (99.8%)
+2026-11-08T10:31:08.6807030Z Greatest absolute difference: 8.21875 at index (0, 152) (up to 0.002 allowed)
+2026-11-08T10:31:08.6808301Z Greatest relative difference: 106.9375 at index (1, 83) (up to 0.02 allowed)
+2026-11-08T10:31:08.6813351Z FAILED tests/utils/test_triton_activation.py::test_silu_and_mul_strided_input[False-0-512-dtype1] - AssertionError: Tensor-likes are not close!
+2026-11-08T10:31:08.6815687Z 
+2026-11-08T10:31:08.6820580Z Mismatched elements: 1533 / 1536 (99.8%)
+2026-11-08T10:31:08.6823494Z Greatest absolute difference: 8.1875 at index (0, 152) (up to 0.002 allowed)
+2026-11-08T10:31:08.6824330Z Greatest relative difference: 107.0 at index (1, 83) (up to 0.02 allowed)
+2026-11-08T10:31:08.6825708Z FAILED tests/utils/test_triton_activation.py::test_silu_and_mul_strided_input[False-0-1025-dtype0] - AssertionError: Tensor-likes are not close!
+2026-11-08T10:31:08.6830574Z 
+2026-11-08T10:31:08.6831852Z Mismatched elements: 3057 / 3075 (99.4%)
+2026-11-08T10:31:08.6832585Z Greatest absolute difference: 11.6796875 at index (0, 1020) (up to 0.002 allowed)
+2026-11-08T10:31:08.6833464Z Greatest relative difference: 24.453125 at index (1, 296) (up to 0.02 allowed)
+2026-11-08T10:31:08.6834829Z FAILED tests/utils/test_triton_activation.py::test_silu_and_mul_strided_input[False-0-1025-dtype1] - AssertionError: Tensor-likes are not close!
+2026-11-08T10:31:08.6835634Z 
+2026-11-08T10:31:08.6835858Z Mismatched elements: 3057 / 3075 (99.4%)
+2026-11-08T10:31:08.6836516Z Greatest absolute difference: 11.625 at index (0, 1020) (up to 0.002 allowed)
+2026-11-08T10:31:08.6837316Z Greatest relative difference: 24.25 at index (1, 296) (up to 0.02 allowed)
+2026-11-08T10:31:08.6839935Z FAILED tests/utils/test_triton_activation.py::test_silu_and_mul_strided_input[False-2-31-dtype0] - AssertionError: Tensor-likes are not close!
+2026-11-08T10:31:08.6840769Z 
+2026-11-08T10:31:08.6844085Z Mismatched elements: 91 / 93 (97.8%)
+2026-11-08T10:31:08.6844844Z Greatest absolute difference: 2.9609375 at index (1, 30) (up to 0.002 allowed)
+2026-11-08T10:31:08.6845646Z Greatest relative difference: 3416.0 at index (2, 11) (up to 0.02 allowed)
+2026-11-08T10:31:08.6848340Z FAILED tests/utils/test_triton_activation.py::test_silu_and_mul_strided_input[False-2-31-dtype1] - AssertionError: Tensor-likes are not close!
+2026-11-08T10:31:08.6849124Z 
+2026-11-08T10:31:08.6849667Z Mismatched elements: 91 / 93 (97.8%)
+2026-11-08T10:31:08.6850359Z Greatest absolute difference: 2.953125 at index (1, 30) (up to 0.002 allowed)
+2026-11-08T10:31:08.6851195Z Greatest relative difference: 3440.0 at index (2, 11) (up to 0.02 allowed)
+2026-11-08T10:31:08.6852589Z FAILED tests/utils/test_triton_activation.py::test_silu_and_mul_strided_input[False-2-512-dtype0] - AssertionError: Tensor-likes are not close!
+2026-11-08T10:31:08.6853479Z 
+2026-11-08T10:31:08.6853729Z Mismatched elements: 1522 / 1536 (99.1%)
+2026-11-08T10:31:08.6854495Z Greatest absolute difference: 6.54296875 at index (1, 238) (up to 0.002 allowed)
+2026-11-08T10:31:08.6855330Z Greatest relative difference: 21312.0 at index (2, 98) (up to 0.02 allowed)
+2026-11-08T10:31:08.6856607Z FAILED tests/utils/test_triton_activation.py::test_silu_and_mul_strided_input[False-2-512-dtype1] - AssertionError: Tensor-likes are not close!
+2026-11-08T10:31:08.6857370Z 
+2026-11-08T10:31:08.6857581Z Mismatched elements: 1523 / 1536 (99.2%)
+2026-11-08T10:31:08.6858227Z Greatest absolute difference: 6.53125 at index (1, 238) (up to 0.002 allowed)
+2026-11-08T10:31:08.6859031Z Greatest relative difference: 21376.0 at index (2, 98) (up to 0.02 allowed)
+2026-11-08T10:31:08.6860288Z FAILED tests/utils/test_triton_activation.py::test_silu_and_mul_strided_input[False-2-1025-dtype0] - AssertionError: Tensor-likes are not close!
+2026-11-08T10:31:08.6861056Z 
+2026-11-08T10:31:08.6861255Z Mismatched elements: 3055 / 3075 (99.3%)
+2026-11-08T10:31:08.6861911Z Greatest absolute difference: 7.55078125 at index (0, 1020) (up to 0.002 allowed)
+2026-11-08T10:31:08.6862742Z Greatest relative difference: 57824.0 at index (2, 984) (up to 0.02 allowed)
+2026-11-08T10:31:08.6864504Z FAILED tests/utils/test_triton_activation.py::test_silu_and_mul_strided_input[False-2-1025-dtype1] - AssertionError: Tensor-likes are not close!
+2026-11-08T10:31:08.6865304Z 
+2026-11-08T10:31:08.6866418Z Mismatched elements: 3052 / 3075 (99.3%)
+2026-11-08T10:31:08.6867169Z Greatest absolute difference: 7.53125 at index (0, 1020) (up to 0.002 allowed)
+2026-11-08T10:31:08.6868022Z Greatest relative difference: 57600.0 at index (2, 984) (up to 0.02 allowed)
+2026-11-08T10:31:08.6869678Z FAILED tests/utils/test_triton_activation.py::test_silu_and_mul_strided_input[True-0-31-dtype0] - AssertionError: Tensor-likes are not close!
+2026-11-08T10:31:08.6870462Z 
+2026-11-08T10:31:08.6870677Z Mismatched elements: 90 / 93 (96.8%)
+2026-11-08T10:31:08.6871364Z Greatest absolute difference: 0.456787109375 at index (0, 14) (up to 0.002 allowed)
+2026-11-08T10:31:08.6872206Z Greatest relative difference: 9.7109375 at index (1, 26) (up to 0.02 allowed)
+2026-11-08T10:31:08.6873560Z FAILED tests/utils/test_triton_activation.py::test_silu_and_mul_strided_input[True-0-31-dtype1] - AssertionError: Tensor-likes are not close!
+2026-11-08T10:31:08.6874348Z 
+2026-11-08T10:31:08.6874558Z Mismatched elements: 90 / 93 (96.8%)
+2026-11-08T10:31:08.6875226Z Greatest absolute difference: 0.453125 at index (0, 14) (up to 0.002 allowed)
+2026-11-08T10:31:08.6876030Z Greatest relative difference: 9.6875 at index (1, 26) (up to 0.02 allowed)
+2026-11-08T10:31:08.6877301Z FAILED tests/utils/test_triton_activation.py::test_silu_and_mul_strided_input[True-0-512-dtype0] - AssertionError: Tensor-likes are not close!
+2026-11-08T10:31:08.6878072Z 
+2026-11-08T10:31:08.6878283Z Mismatched elements: 1503 / 1536 (97.9%)
+2026-11-08T10:31:08.6878969Z Greatest absolute difference: 0.6337890625 at index (0, 152) (up to 0.002 allowed)
+2026-11-08T10:31:08.6879801Z Greatest relative difference: 67.6875 at index (1, 83) (up to 0.02 allowed)
+2026-11-08T10:31:08.6881090Z FAILED tests/utils/test_triton_activation.py::test_silu_and_mul_strided_input[True-0-512-dtype1] - AssertionError: Tensor-likes are not close!
+2026-11-08T10:31:08.6882435Z 
+2026-11-08T10:31:08.6882674Z Mismatched elements: 1502 / 1536 (97.8%)
+2026-11-08T10:31:08.6883348Z Greatest absolute difference: 0.62890625 at index (0, 152) (up to 0.002 allowed)
+2026-11-08T10:31:08.6884155Z Greatest relative difference: 67.5 at index (1, 83) (up to 0.02 allowed)
+2026-11-08T10:31:08.6885413Z FAILED tests/utils/test_triton_activation.py::test_silu_and_mul_strided_input[True-0-1025-dtype0] - AssertionError: Tensor-likes are not close!
+2026-11-08T10:31:08.6886187Z 
+2026-11-08T10:31:08.6886410Z Mismatched elements: 3031 / 3075 (98.6%)
+2026-11-08T10:31:08.6887079Z Greatest absolute difference: 0.904296875 at index (0, 1020) (up to 0.002 allowed)
+2026-11-08T10:31:08.6887917Z Greatest relative difference: 20.921875 at index (1, 296) (up to 0.02 allowed)
+2026-11-08T10:31:08.6889191Z FAILED tests/utils/test_triton_activation.py::test_silu_and_mul_strided_input[True-0-1025-dtype1] - AssertionError: Tensor-likes are not close!
+2026-11-08T10:31:08.6889978Z 
+2026-11-08T10:31:08.6890197Z Mismatched elements: 3031 / 3075 (98.6%)
+2026-11-08T10:31:08.6890872Z Greatest absolute difference: 0.90234375 at index (0, 1020) (up to 0.002 allowed)
+2026-11-08T10:31:08.6891706Z Greatest relative difference: 20.875 at index (1, 296) (up to 0.02 allowed)
+2026-11-08T10:31:08.6892969Z FAILED tests/utils/test_triton_activation.py::test_silu_and_mul_strided_input[True-2-31-dtype0] - AssertionError: Tensor-likes are not close!
+2026-11-08T10:31:08.6893824Z 
+2026-11-08T10:31:08.6894041Z Mismatched elements: 89 / 93 (95.7%)
+2026-11-08T10:31:08.6894709Z Greatest absolute difference: 0.2373046875 at index (1, 30) (up to 0.002 allowed)
+2026-11-08T10:31:08.6895533Z Greatest relative difference: 2390.0 at index (2, 11) (up to 0.02 allowed)
+2026-11-08T10:31:08.6896804Z FAILED tests/utils/test_triton_activation.py::test_silu_and_mul_strided_input[True-2-31-dtype1] - AssertionError: Tensor-likes are not close!
+2026-11-08T10:31:08.6897592Z 
+2026-11-08T10:31:08.6897827Z Mismatched elements: 89 / 93 (95.7%)
+2026-11-08T10:31:08.6898498Z Greatest absolute difference: 0.2373046875 at index (1, 30) (up to 0.002 allowed)
+2026-11-08T10:31:08.6899530Z Greatest relative difference: 2384.0 at index (2, 11) (up to 0.02 allowed)
+2026-11-08T10:31:08.6900841Z FAILED tests/utils/test_triton_activation.py::test_silu_and_mul_strided_input[True-2-512-dtype0] - AssertionError: Tensor-likes are not close!
+2026-11-08T10:31:08.6901599Z 
+2026-11-08T10:31:08.6901824Z Mismatched elements: 1482 / 1536 (96.5%)
+2026-11-08T10:31:08.6902500Z Greatest absolute difference: 0.51171875 at index (1, 238) (up to 0.002 allowed)
+2026-11-08T10:31:08.6903344Z Greatest relative difference: 21472.0 at index (0, 292) (up to 0.02 allowed)
+2026-11-08T10:31:08.6904633Z FAILED tests/utils/test_triton_activation.py::test_silu_and_mul_strided_input[True-2-512-dtype1] - AssertionError: Tensor-likes are not close!
+2026-11-08T10:31:08.6905396Z 
+2026-11-08T10:31:08.6905626Z Mismatched elements: 1480 / 1536 (96.4%)
+2026-11-08T10:31:08.6906293Z Greatest absolute difference: 0.51171875 at index (1, 238) (up to 0.002 allowed)
+2026-11-08T10:31:08.6907134Z Greatest relative difference: 21888.0 at index (0, 292) (up to 0.02 allowed)
+2026-11-08T10:31:08.6908440Z FAILED tests/utils/test_triton_activation.py::test_silu_and_mul_strided_input[True-2-1025-dtype0] - AssertionError: Tensor-likes are not close!
+2026-11-08T10:31:08.6909210Z 
+2026-11-08T10:31:08.6911446Z Mismatched elements: 2944 / 3075 (95.7%)
+2026-11-08T10:31:08.6912350Z Greatest absolute difference: 0.595703125 at index (0, 1020) (up to 0.002 allowed)
+2026-11-08T10:31:08.6913384Z Greatest relative difference: 64960.0 at index (2, 870) (up to 0.02 allowed)
+2026-11-08T10:31:08.6915110Z FAILED tests/utils/test_triton_activation.py::test_silu_and_mul_strided_input[True-2-1025-dtype1] - AssertionError: Tensor-likes are not close!
+2026-11-08T10:31:08.6916052Z 
+2026-11-08T10:31:08.6916320Z Mismatched elements: 2946 / 3075 (95.8%)
+2026-11-08T10:31:08.6917427Z Greatest absolute difference: 0.59765625 at index (0, 1020) (up to 0.002 allowed)
+2026-11-08T10:31:08.6919285Z Greatest relative difference: 65536.0 at index (2, 870) (up to 0.02 allowed)
+2026-11-08T10:31:08.6920163Z 24 failed, 12 passed in 4.85s
+2026-11-08T10:31:08.6920496Z 
+2026-11-08T10:31:08.7455897Z ##[group]Run $env:PYTHONPATH = "$env:GITHUB_WORKSPACE;C:\PR\flashinfer-triton-windows-20261108"
+2026-11-08T10:31:08.7456948Z $env:PYTHONPATH = "$env:GITHUB_WORKSPACE;C:\PR\flashinfer-triton-windows-20261108"
+2026-11-08T10:31:08.7457712Z $env:FLASHINFER_SOURCE_ROOT = $env:GITHUB_WORKSPACE
+2026-11-08T10:31:08.7458420Z $test = Join-Path $env:GITHUB_WORKSPACE 'tests/utils/test_triton_activation.py'
+2026-11-08T10:31:08.7459712Z & 'C:\PR\kvpress-gpu-venv-20261107\Scripts\python.exe' -m pytest -p flashinfer_activation_test_adapter_20261108 --noconftest -o addopts='' $test -q --tb=short
+2026-11-08T10:31:08.7460911Z if ($LASTEXITCODE -ne 0) { throw 'Patched CUDA tests failed' }
+2026-11-08T10:31:08.7525600Z shell: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.EXE -command ". '{0}'"
+2026-11-08T10:31:08.7526388Z env:
+2026-11-08T10:31:08.7526877Z   MASK_MACHINE: ***
+2026-11-08T10:31:08.7527324Z   MASK_USER: ***
+2026-11-08T10:31:08.7527803Z   PYTEST_DISABLE_PLUGIN_AUTOLOAD: 1
+2026-11-08T10:31:08.7528303Z   GIT_TERMINAL_PROMPT: 0
+2026-11-08T10:31:08.7528934Z   CC: C:\PR\flashinfer-triton-windows-20261108\triton\runtime\tcc\tcc.exe
+2026-11-08T10:31:08.7529860Z   CUDA_PATH: C:\PR\flashinfer-triton-windows-20261108\triton\backends\nvidia
+2026-11-08T10:31:08.7530547Z ##[endgroup]
+2026-11-08T10:31:14.2576739Z ....................................                                     [100%]
+2026-11-08T10:31:14.2583102Z 36 passed in 4.59s
+2026-11-08T10:31:15.0288831Z Post job cleanup.
+2026-11-08T10:31:15.1579930Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe version
+2026-11-08T10:31:15.1978658Z git version 2.56.0.windows.4
+2026-11-08T10:31:15.2019200Z Copying 'C:\Users\***\.gitconfig' to 'C:\PR\github-gpu-runner-20261106\_work\_temp\dc7c07d3-c1ed-4fdf-8412-3e0699d0163f\.gitconfig'
+2026-11-08T10:31:15.2040717Z Temporarily overriding HOME='C:\PR\github-gpu-runner-20261106\_work\_temp\dc7c07d3-c1ed-4fdf-8412-3e0699d0163f' before making global git config changes
+2026-11-08T10:31:15.2041531Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-08T10:31:15.2049927Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe config --global --add safe.directory C:\PR\github-gpu-runner-20261106\_work\flashinfer-activation-gpu-validation-20261108-a8eedc6a75\flashinfer-activation-gpu-validation-20261108-a8eedc6a75
+2026-11-08T10:31:15.2479780Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe config --local --name-only --get-regexp core\.sshCommand
+2026-11-08T10:31:15.2931628Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+2026-11-08T10:31:16.1875789Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-08T10:31:16.2340301Z [command]C:\Users\***\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+2026-11-08T10:31:17.1652249Z Cleaning up orphan processes
+2026-11-08T10:31:17.2178262Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
